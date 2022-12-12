@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quién soy?</title>
+</head>
+<body>
+    
+    <style>
+        body{
+            background-color: antiquewhite;
+            
+        }
+        #capa1{
+        left:20px; 
+        top:40px;
+        background-color:blue;
+        }
+        
+        #capa2{
+          background-color:yellow;
+        }
+        .caja{
+         width:120px; height:120px;
+        }
+    </style>
+
+<script>
+    function Dice(mensaje){
+        alert(mensaje);
+    }
+
+</script>
+<body>
+        <div id="contenedor">
+        <div onclick="Dice('Soy azul');" id="capa1" class="caja">AZ</div>
+        <div onclick="Dice('Soy amarillo')" id="capa2" class="caja">AM</div>
+                      
+    </div>
+    
+</body>
+</html>
