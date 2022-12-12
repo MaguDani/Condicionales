@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categoría deportiva</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color: blueviolet;
+            color: aqua;
+            font-size: black;
+        }
+        #boton{
+            width: 80px;
+            height: 50px;
+            font-size: 15px;
+            background: teal;
+            font-size: Impact, Impact, Haettenschweiler, 'Arial Narrow Bold, sans-serif';
+        }
+        .Benjamín{
+            color:black;
+            
+        }
+        .Alevín{
+            color:rgb(255, 0, 0)
+        }
+        .Infantil{
+            color:chartreuse
+        }
+        .Cadete{
+            color:gold
+        }
+        
+    </style>
+    <script>
+        function LeerEdad(){
+
+            var edad= parseInt(document.getElementById("edad").value);
+
+            if(edad<=8){
+                document.getElementById("mensaje_salida").innerHTML = "<span class='Benjamín'>BENJAMÍN</span>"  
+            }else if(edad<=10){
+                document.getElementById("mensaje_salida").innerHTML = "<span class='Alevín'>ALEVÍN</span>"
+            }else if(edad<=12){
+                document.getElementById("mensaje_salida").innerHTML = "<span class='Infantil'>INFANTIL</span>"
+            }else{
+                document.getElementById("mensaje_salida").innerHTML = "<span class='Cadete'>CADETE</span>"
+            }
+
+                
+            
+
+        }
+    </script>
+    Edad: <input type="text" id="edad"> <br>
+    <input type="button" value="Ver categoria" onclick="LeerEdad()"> <br>
+    <div id="mensaje_salida"> </div>
+    
+</body>
+</html>
